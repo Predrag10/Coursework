@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Memory Game</title>
+	<link rel="stylesheet" text="style/css" href="gameStyle.css">
+</head>
+<body>
+	<div id="landingPage">
+		<h1>MEMORY GAME</h1>
+		<h2 id="desc">Match Latin with Cyrillic letters</h2>
+		<p class="p1">Name</p>
+		<p class="p1">Time</p>
+		<p class="p1">Score</p>
+		<p class="p1">Number of Tiles</p>
+		<hr>
+		<div id="Leaderboard">
+		</div>
+		<form id="form" onsubmit="return false;">
+    		Your name:<input type="text" id="userInput" maxlength="20" onkeypress="return AvoidSpace(event)" />
+    		<input id ="OK" type="submit" onclick="othername();" value="OK" />
+		</form>
+		<button id="start" type="button" onclick="startGame()" disabled="true">PLAY</button>
+	</div>
+
+	<div id="memoryPage">
+		<h2 id="time">ELAPSED TIME: 0mins 0s</h2>
+		<h1>MEMORY GAME</h1>
+		<p id="Opened">SCORE: 0</p>
+		<button id="end" onclick="endGame()">Start Screen</button>
+
+		<div id="game_board">
+		</div>
+	</div>
+<script src="gameScript.js"></script>
+</body>
+</html>
