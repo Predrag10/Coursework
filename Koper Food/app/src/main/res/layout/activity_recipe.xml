@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#00A9C3"
+    android:fillViewport="false">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00A9C3"
+    tools:context=".Recipe">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="#FFF"
+        android:textSize="25sp"
+        android:text="Name"/>
+
+    <TextView
+        android:id="@+id/recipeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="150dp"
+        android:textColor="#FFF"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:text="Difficulty"/>
+
+    <SeekBar
+        android:id="@+id/difficultySeekBar"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/difficulty"
+        android:layout_marginLeft="200dp"
+        android:foregroundGravity="right"
+        app:tickMarkTint="#F2D915" />
+
+
+    <TextView
+        android:id="@+id/recipeDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:text="Recipe description"/>
+
+    <View
+        android:layout_below="@+id/recipeDescription"
+        android:layout_width="300dp"
+        android:layout_marginLeft="40dp"
+        android:layout_height="3dp"
+        android:background="#FFF"/>
+
+
+    <TextView
+        android:id="@+id/recipeText"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:textSize="15sp"
+        android:textColor="#FFF"
+        android:scrollbars="vertical" />
+
+    <View
+        android:layout_below="@+id/recipeText"
+        android:layout_width="300dp"
+        android:layout_marginLeft="40dp"
+        android:layout_height="3dp"
+        android:background="#FFF"/>
+
+    <TextView
+        android:id="@+id/showIngredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/recipeText"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="17sp"
+        android:textColor="#FFF"
+        android:text="Show ingredients"/>
+
+    <ImageButton
+        android:id="@+id/ingredientsDropDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+        android:layout_alignTop="@+id/showIngredients"
+        android:layout_marginLeft="250dp" />
+
+    <TextView
+        android:id="@+id/whereToFindIngredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/showIngredients"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="17sp"
+        android:textColor="#FFF"
+        android:text="Where to find ingredients"/>
+
+    <ImageButton
+        android:id="@+id/marketsListDropDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+        android:layout_alignTop="@+id/whereToFindIngredients"
+        android:layout_marginLeft="250dp" />
+
+    <TextView
+        android:id="@+id/restaurantsThatServeThis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/whereToFindIngredients"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="17sp"
+        android:textColor="#FFF"
+        android:text="Restaurants that serve this"/>
+
+    <ImageButton
+        android:id="@+id/restaurantsListDropDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+        android:layout_alignTop="@+id/restaurantsThatServeThis"
+        android:layout_marginLeft="250dp" />
+
+    <Button
+        android:id="@+id/goToCommentsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/restaurantsThatServeThis"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Comments"/>
+
+</RelativeLayout>
+</ScrollView>

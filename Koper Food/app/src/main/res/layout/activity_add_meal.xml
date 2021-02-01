@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:fillViewport="false">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMeal">
+
+
+    <EditText
+        android:id="@+id/mealName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="top"
+        android:hint="Name"
+        android:textColorLink="#F2D915"
+        android:textIsSelectable="true"/>
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignTop="@id/mealName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:hint="Recipe description"
+        android:textColorLink="#F2D915"/>
+
+<TextView
+    android:id="@+id/difficulty"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Difficulty"
+    android:layout_alignTop="@+id/description"
+    android:layout_marginTop="120dp"
+    android:gravity="left"
+    android:layout_marginLeft="20dp"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/description"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="120dp"
+        android:foregroundGravity="right"
+        app:tickMarkTint="#F2D915" />
+
+    <EditText
+        android:id="@+id/ingredient"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_alignTop="@id/seekBar"
+        android:layout_marginTop="70dp"
+        android:hint="ingredient"/>
+
+    <EditText
+        android:id="@+id/ingredientPrice"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_alignTop="@id/seekBar"
+        android:layout_marginTop="70dp"
+        android:hint="Price"/>
+
+    <Button
+        android:id="@+id/addMealButton"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ingredientPrice"
+        android:text="+"
+        android:layout_marginLeft="290dp"/>
+
+    <Button
+        android:id="@+id/editIngredientsButton"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/addMealButton"
+        android:text="Edit"
+        android:layout_marginLeft="330dp"/>
+
+    <EditText
+        android:id="@+id/market"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_alignTop="@id/ingredient"
+        android:layout_marginTop="70dp"
+        android:hint="Where can we find them?"/>
+
+
+    <Button
+        android:id="@+id/addMarketButton"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ingredient"
+        android:layout_marginTop="70dp"
+        android:text="+"
+        android:layout_marginLeft="290dp"/>
+
+    <Button
+        android:id="@+id/editWhereToFindButton"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/addMarketButton"
+        android:text="Edit"
+        android:layout_marginLeft="330dp"/>
+
+    <EditText
+        android:id="@+id/restaurant"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_alignTop="@id/market"
+        android:layout_marginTop="70dp"
+        android:hint="Which restaurants serve this food?"/>
+
+
+    <Button
+        android:id="@+id/addRestaurantButton"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/market"
+        android:layout_marginTop="70dp"
+        android:text="+"
+        android:layout_marginLeft="290dp"/>
+
+    <Button
+        android:id="@+id/editRestaurantsButton"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/addRestaurantButton"
+        android:text="Edit"
+        android:layout_marginLeft="330dp"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/restaurant"
+        android:layout_marginTop="100dp"
+        android:text="Cancel"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/postRecipeButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/restaurant"
+        android:layout_marginTop="100dp"
+        android:text="Post"
+
+        android:layout_marginLeft="290dp"/>
+
+
+</RelativeLayout>
+    </ScrollView>

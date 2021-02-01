@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00A9C3"
+    tools:context=".Browse">
+
+    <TextView
+        android:id="@+id/browseText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Browse"
+        android:textSize="40sp"
+        android:layout_margin="25dp"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_alignTop="@+id/browseText"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="45dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:layout_alignTop="@+id/browseText"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="160dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Difficulty"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="280dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"/>
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="350dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="30dp"
+        android:numColumns="3"
+        android:layout_height="400dp"
+        android:layout_below="@id/nameText"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/browseText"
+        android:layout_gravity="bottom|end"
+        android:background="#FFF"
+        android:tint="#00A9C3"
+        app:backgroundTint="#FFF"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:background="#FFF"
+        android:tint="#00A9C3"
+        app:backgroundTint="#FFF"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
